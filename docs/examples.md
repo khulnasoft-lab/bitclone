@@ -19,7 +19,7 @@ cd /tmp/foo
 git init --bare .
 ```
 
-Create a ``copy.bara.sky`` config file like:
+Create a ``bit.clone.sky`` config file like:
 
 ```python
 url = "https://github.com/khulnasoft-lab/bitclone.git"
@@ -48,14 +48,14 @@ core.workflow(
 Invoke the tool like:
 
 ```bash
-bitclone copy.bara.sky --force
+bitclone bit.clone.sky --force
 ```
 
 ``--force`` should only be needed for empty destination repositories or non-existent
 branches in the destination. After the first import, it should be always invoked as:
 
 ```
-bitclone copy.bara.sky
+bitclone bit.clone.sky
 ```
 
 ## GitHub SSH basic import
@@ -65,7 +65,7 @@ This example will import private source code to an external GitHub repository, a
 PROTIP: You will need to have an ssh key setup without a password to accomplish this, Bitclone doesn't
 currently support ssh with a password.
 
-Create a ``copy.bara.sky`` config file like:
+Create a ``bit.clone.sky`` config file like:
 
 ```python
 # Update these references to your orginzations repos
@@ -98,14 +98,14 @@ core.workflow(
 Invoke the tool like:
 
 ```bash
-bitclone copy.bara.sky --force
+bitclone bit.clone.sky --force
 ```
 
 ``--force`` should only be needed for empty destination repositories or non-existent
 branches in the destination. After the first import, it should be always invoked as:
 
 ```
-bitclone copy.bara.sky
+bitclone bit.clone.sky
 ```
 
 After running through this example, you should see all the source from
@@ -125,10 +125,10 @@ $ mkdir /tmp/gitdest
 $ cd /tmp/gitdest
 $ git init --bare .
 ```
-Next up is creating and editing a `copy.bara.sky` config file. The config file will contain the
+Next up is creating and editing a `bit.clone.sky` config file. The config file will contain the
 details of our workflow. Using your text editor of choice, create and edit the config file:
 ```
-$ vim /tmp/copy.bara.sky
+$ vim /tmp/bit.clone.sky
 ```
 We'll define in the config to pull changes from the default branch in the origin repository.
 ```
@@ -156,7 +156,7 @@ repository has many commits, we can just pull default branch revisions from the 
 revisions in the repository, using the `--last-rev` flag.
 
 ```
-$ bitclone /tmp/copy.bara.sky --force --last-rev -15
+$ bitclone /tmp/bit.clone.sky --force --last-rev -15
 ```
 If we wanted to pull all revisions from the default branch, we would omit the `--last-rev` flag.
 Since we are using `SQUASH` mode, all commits from the origin repository will be "squashed" into a
@@ -215,14 +215,14 @@ command is specified, *migrate* is executed by default. These two commands are
 equivalent:
 
 ```shell
-$ bitclone copy.bara.sky
-$ bitclone migrate copy.bara.sky
+$ bitclone bit.clone.sky
+$ bitclone migrate bit.clone.sky
 ```
 
 You can validate your configuration running:
 
 ```shell
-$ bitclone validate copy.bara.sky
+$ bitclone validate bit.clone.sky
 Bitclone source mover
 INFO: Configuration validated.
 ```
@@ -230,7 +230,7 @@ INFO: Configuration validated.
 And you can get information about a migration workflow by running:
 
 ```shell
-$ bitclone info copy.bara.sky
+$ bitclone info bit.clone.sky
 Bitclone source mover
 ...
 INFO: Workflow 'default': last_migrated_ref 4dd20b2...
