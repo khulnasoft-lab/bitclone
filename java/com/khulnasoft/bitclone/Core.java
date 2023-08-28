@@ -710,7 +710,7 @@ public class Core implements LabelsAwareModule, StarlarkValue {
             positional = false,
             doc =
                 "A set of named regexes that can be used to match part of the file name."
-                    + " Bitclone uses [re2](https://github.com/khulnasoft-lab/re2/wiki/Syntax) syntax."
+                    + " Bitclone uses [re2](https://github.com/google/re2/wiki/Syntax) syntax."
                     + " For example {\"x\": \"[A-Za-z]+\"}",
             defaultValue = "{}")
       },
@@ -897,7 +897,7 @@ public class Core implements LabelsAwareModule, StarlarkValue {
             positional = false,
             doc =
                 "A set of named regexes that can be used to match part of the file name."
-                    + " Bitclone uses [re2](https://github.com/khulnasoft-lab/re2/wiki/Syntax) syntax."
+                    + " Bitclone uses [re2](https://github.com/google/re2/wiki/Syntax) syntax."
                     + " For example {\"x\": \"[A-Za-z]+\"}",
             defaultValue = "{}")
       },
@@ -1009,7 +1009,7 @@ public class Core implements LabelsAwareModule, StarlarkValue {
             named = true,
             doc =
                 "A set of named regexes that can be used to match part of the replaced text."
-                    + "Bitclone uses [re2](https://github.com/khulnasoft-lab/re2/wiki/Syntax) syntax."
+                    + "Bitclone uses [re2](https://github.com/google/re2/wiki/Syntax) syntax."
                     + " For example {\"x\": \"[A-Za-z]+\"}",
             defaultValue = "{}"),
         @Param(
@@ -1502,7 +1502,7 @@ public class Core implements LabelsAwareModule, StarlarkValue {
                     + "least one (or no matches if verify_no_match) match in each of the files "
                     + "included in paths. The re2j pattern will be applied in multiline mode, i.e."
                     + " '^' refers to the beginning of a file and '$' to its end. "
-                    + "Bitclone uses [re2](https://github.com/khulnasoft-lab/re2/wiki/Syntax) syntax."),
+                    + "Bitclone uses [re2](https://github.com/google/re2/wiki/Syntax) syntax."),
         @Param(
             name = "paths",
             named = true,
@@ -2096,7 +2096,7 @@ public class Core implements LabelsAwareModule, StarlarkValue {
             named = true,
             doc =
                 "A set of named regexes that can be used to match part of the versions. Bitclone"
-                    + " uses [re2](https://github.com/khulnasoft-lab/re2/wiki/Syntax) syntax. Use the"
+                    + " uses [re2](https://github.com/google/re2/wiki/Syntax) syntax. Use the"
                     + " following nomenclature n0, n1, n2 for the version part (will use numeric"
                     + " sorting) or s0, s1, s2 (alphabetic sorting). Note that there can be mixed"
                     + " but the numbers cannot be repeated. In other words n0, s1, n2 is valid but"

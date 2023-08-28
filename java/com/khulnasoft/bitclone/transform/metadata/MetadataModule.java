@@ -889,7 +889,7 @@ public class MetadataModule implements StarlarkValue {
                 "Regexes for the ${reference} token's content. Requires one 'before_ref' entry"
                     + " matching the ${reference} token's content on the before side. Optionally"
                     + " accepts one 'after_ref' used for validation."
-                    + " Bitclone uses [re2](https://github.com/khulnasoft-lab/re2/wiki/Syntax) syntax."),
+                    + " Bitclone uses [re2](https://github.com/google/re2/wiki/Syntax) syntax."),
         @Param(
             name = "additional_import_labels",
             named = true,

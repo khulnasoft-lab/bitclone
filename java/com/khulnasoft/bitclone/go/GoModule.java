@@ -52,7 +52,7 @@ public class GoModule implements StarlarkValue {
               @ParamType(type = String.class),
             },
             doc =
-                "The go module path name. e.g. github.com/khulnasoft-lab/gopacket. This will automatically"
+                "The go module path name. e.g. github.com/google/gopacket. This will automatically"
                     + " normalize uppercase characters to '!{your_uppercase_character}' to escape"
                     + " them."),
         @Param(
@@ -68,8 +68,8 @@ public class GoModule implements StarlarkValue {
       })
   @Example(
       title = "Create a version list for a given go package",
-      before = "Example of how create a version list for github.com/khulnasoft-lab/gopacket",
-      code = "go.go_proxy_version_list(\n" + "        module='github.com/khulnasoft-lab/gopacket'\n" + ")")
+      before = "Example of how create a version list for github.com/google/gopacket",
+      code = "go.go_proxy_version_list(\n" + "        module='github.com/google/gopacket'\n" + ")")
   public GoProxyVersionList getGoProxyVersionList(String module, Object ref) throws EvalException {
     String refConvert = convertFromNoneable(ref, null);
     if (!Strings.isNullOrEmpty(refConvert)) {
@@ -90,7 +90,7 @@ public class GoModule implements StarlarkValue {
               @ParamType(type = String.class),
             },
             doc =
-                "The go module path name. e.g. github.com/khulnasoft-lab/gopacket. This will automatically"
+                "The go module path name. e.g. github.com/google/gopacket. This will automatically"
                     + " normalize uppercase characters to '!{your_uppercase_character}' to escape"
                     + " them.")
       })
