@@ -1,0 +1,6 @@
+bazel-*
+.idea
+*.iml
+*.pyc
+.ijwb
+/.bazelrc.user
