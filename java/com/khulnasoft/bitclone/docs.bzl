@@ -1,3 +1,17 @@
+# Copyright 2016 KhulnaSoft Ltd.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
 """Bazel rule to generate bitclone reference docs."""
 
 def _doc_generator_impl(ctx):
@@ -37,7 +51,7 @@ doc_generator = rule(
 
 def bitclone_reference(name, *, out, libraries, template_file = None):
     """
-    Auto-generate reference documentation for a target containing bitclone libraries.
+    Auto-generate reference documentation for a target containing Bitclone libraries.
 
     out: Name of the output file to generate.
     libraries: List of libraries for which to generate reference documentation.
@@ -46,7 +60,7 @@ def bitclone_reference(name, *, out, libraries, template_file = None):
     native.java_binary(
         name = "generator",
         main_class = "com.khulnasoft.bitclone.doc.Generator",
-        runtime_deps = ["//java/com/khulnasoft/bitclone/doc:generator-lib"] + libraries,
+        runtime_deps = ["//java/com/khulnasoft.bitclone/doc:generator-lib"] + libraries,
     )
 
     doc_generator(
