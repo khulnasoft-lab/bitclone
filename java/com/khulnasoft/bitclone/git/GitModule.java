@@ -2589,7 +2589,7 @@ public class GitModule implements LabelsAwareModule, StarlarkValue {
         // com.google.api.client.json.JsonFactory,
         //
         //   post_review_to_gerrit (feedback.bara.sky)
-        //   -> GoogleGerritApiTransport.post (ctx.destination.post_review)
+        //   -> KhulnasoftGerritApiTransport.post (ctx.destination.post_review)
         //   -> GerritApiTransport.post
         //   -> GerritApi.setReview
         //   -> GerritEndpoint.postReview
@@ -2619,7 +2619,7 @@ public class GitModule implements LabelsAwareModule, StarlarkValue {
             named = true,
             doc =
                 "A set of named regexes that can be used to match part of the versions. Bitclone"
-                    + " uses [re2](https://github.com/google/re2/wiki/Syntax) syntax. Use the"
+                    + " uses [re2](https://github.com/khulnasoft-lab/re2/wiki/Syntax) syntax. Use the"
                     + " following nomenclature n0, n1, n2 for the version part (will use numeric"
                     + " sorting) or s0, s1, s2 (alphabetic sorting). Note that there can be mixed"
                     + " but the numbers cannot be repeated. In other words n0, s1, n2 is valid but"

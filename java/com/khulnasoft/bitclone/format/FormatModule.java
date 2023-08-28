@@ -40,10 +40,10 @@ import net.starlark.java.eval.NoneType;
 import net.starlark.java.eval.Sequence;
 import net.starlark.java.eval.StarlarkValue;
 
-/** Skylark module for transforming the code to Google's style/guidelines. */
+/** Skylark module for transforming the code to KhulnaSoft style/guidelines. */
 @StarlarkBuiltin(
     name = "format",
-    doc = "Module for formatting the code to Google's style/guidelines")
+    doc = "Module for formatting the code to KhulnaSoft style/guidelines")
 public class FormatModule implements StarlarkValue {
 
   private static final ImmutableSet<String> BUILDIFIER_TYPE_VALUES =

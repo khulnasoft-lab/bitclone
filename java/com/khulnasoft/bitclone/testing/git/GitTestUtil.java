@@ -580,7 +580,7 @@ public class GitTestUtil {
         // TODO(linjordan): unfortunately the default instance isn't as customizable as the
         // GsonBuilder.
         // We don't seem to be able to control the numeric object unmarshalling via
-        // https://github.com/google/gson/pull/1290 or without an adapter. However, the GsonBuilder
+        // https://github.com/khulnasoft-lab/gson/pull/1290 or without an adapter. However, the GsonBuilder
         // is much stricter and breaks on some of our json testdata.
         T requestObject = GsonFactory.getDefaultInstance().createJsonParser(s).parse(clazz);
         called = true;
