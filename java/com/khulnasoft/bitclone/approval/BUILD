@@ -25,9 +25,9 @@ java_library(
     srcs = glob(["**/*.java"]),
     javacopts = JAVACOPTS,
     deps = [
-        "//java/com/khulnasoft.bitclone/exception",
-        "//java/com/khulnasoft.bitclone/revision",
-        "//java/com/khulnasoft.bitclone/util/console",
+        "//java/com/khulnasoft/bitclone/exception",
+        "//java/com/khulnasoft/bitclone/revision",
+        "//java/com/khulnasoft/bitclone/util/console",
         "//third_party:error_prone",
         "//third_party:google_http_client",
         "//third_party:guava",

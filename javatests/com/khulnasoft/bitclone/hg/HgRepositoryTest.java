@@ -325,14 +325,14 @@ public class HgRepositoryTest {
   @Test
   public void testLogKeyword() throws Exception {
     addAndCommitFile("bit.clone");
-    addAndCommitFile("COPY BARA");
+    addAndCommitFile("BIT CLONE");
     addAndCommitFile("test");
 
     ImmutableList<HgLogEntry> commits = repository.log().run();
     ImmutableList<HgLogEntry> testCommits = repository.log().withKeyword("bit.clone").run();
     assertThat(testCommits).hasSize(2);
 
-    assertThat(testCommits.get(0).getDescription()).contains("COPY BARA");
+    assertThat(testCommits.get(0).getDescription()).contains("BIT CLONE");
     assertThat(testCommits.get(1).getDescription()).contains("bit.clone");
   }
 

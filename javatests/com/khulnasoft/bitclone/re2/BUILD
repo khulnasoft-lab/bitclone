@@ -20,9 +20,9 @@ all_tests(
     name = "all_tests",
     tests = ["Re2Test.java"],
     deps = [
-        "//java/com/khulnasoft.bitclone/exception",
-        "//java/com/khulnasoft.bitclone/testing",
-        "//java/com/khulnasoft.bitclone/util/console/testing",
+        "//java/com/khulnasoft/bitclone/exception",
+        "//java/com/khulnasoft/bitclone/testing",
+        "//java/com/khulnasoft/bitclone/util/console/testing",
         "//third_party:starlark",
         "//third_party:truth",
     ],

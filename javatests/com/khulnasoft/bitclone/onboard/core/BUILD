@@ -22,12 +22,12 @@ all_tests(
         ["**/*Test.java"],
     ),
     deps = [
-        "//java/com/khulnasoft.bitclone/onboard",
-        "//java/com/khulnasoft.bitclone/onboard/core",
-        "//java/com/khulnasoft.bitclone/testing",
-        "//java/com/khulnasoft.bitclone/util",
-        "//java/com/khulnasoft.bitclone/util/console",
-        "//java/com/khulnasoft.bitclone/util/console/testing",
+        "//java/com/khulnasoft/bitclone/onboard",
+        "//java/com/khulnasoft/bitclone/onboard/core",
+        "//java/com/khulnasoft/bitclone/testing",
+        "//java/com/khulnasoft/bitclone/util",
+        "//java/com/khulnasoft/bitclone/util/console",
+        "//java/com/khulnasoft/bitclone/util/console/testing",
         "//third_party:truth",
     ],
 )

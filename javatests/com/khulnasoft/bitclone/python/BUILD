@@ -22,8 +22,8 @@ all_tests(
     env = {"DATA_DIR": "$(rlocationpath //javatests/com/khulnasoft.bitclone/python:testfiles)"},
     tests = glob(["*.java"]),
     deps = [
-        "//java/com/khulnasoft.bitclone/exception",
-        "//java/com/khulnasoft.bitclone/testing",
+        "//java/com/khulnasoft/bitclone/exception",
+        "//java/com/khulnasoft/bitclone/testing",
         "//third_party:starlark",
         "//third_party:truth",
     ],

@@ -27,7 +27,7 @@ java_library(
         "//visibility:public",
     ],
     deps = [
-        "//java/com/khulnasoft.bitclone/util/console",
+        "//java/com/khulnasoft/bitclone/util/console",
         "//third_party:guava",
         "//third_party:jsr305",
         "//third_party:truth",

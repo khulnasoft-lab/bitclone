@@ -25,12 +25,12 @@ all_tests(
         "RequestedVersionSelectorTest.java",
     ],
     deps = [
-        "//java/com/khulnasoft.bitclone/exception",
-        "//java/com/khulnasoft.bitclone/templatetoken",
-        "//java/com/khulnasoft.bitclone/testing",
-        "//java/com/khulnasoft.bitclone/util/console",
-        "//java/com/khulnasoft.bitclone/util/console/testing",
-        "//java/com/khulnasoft.bitclone/version",
+        "//java/com/khulnasoft/bitclone/exception",
+        "//java/com/khulnasoft/bitclone/templatetoken",
+        "//java/com/khulnasoft/bitclone/testing",
+        "//java/com/khulnasoft/bitclone/util/console",
+        "//java/com/khulnasoft/bitclone/util/console/testing",
+        "//java/com/khulnasoft/bitclone/version",
         "//third_party:truth",
     ],
 )

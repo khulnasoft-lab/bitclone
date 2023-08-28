@@ -60,7 +60,7 @@ def bitclone_reference(name, *, out, libraries, template_file = None):
     native.java_binary(
         name = "generator",
         main_class = "com.khulnasoft.bitclone.doc.Generator",
-        runtime_deps = ["//java/com/khulnasoft.bitclone/doc:generator-lib"] + libraries,
+        runtime_deps = ["//java/com/khulnasoft/bitclone/doc:generator-lib"] + libraries,
     )
 
     doc_generator(

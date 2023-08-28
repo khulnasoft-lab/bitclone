@@ -20,7 +20,7 @@ java_library(
     name = "python",
     srcs = glob(["*.java"]),
     deps = [
-        "//java/com/khulnasoft.bitclone:base",
+        "//java/com/khulnasoft/bitclone:base",
         "//third_party:guava",
         "//third_party:starlark",
         "//third_party:sun_mail",

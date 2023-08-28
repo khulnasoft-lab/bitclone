@@ -23,7 +23,7 @@ java_library(
         "-Xlint:unchecked",
     ],
     deps = [
-        "//java/com/khulnasoft.bitclone/starlark",
+        "//java/com/khulnasoft/bitclone/starlark",
         "//third_party:guava",
         "//third_party:jsr305",
         "//third_party:re2j",

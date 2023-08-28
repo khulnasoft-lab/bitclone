@@ -28,11 +28,11 @@ java_library(
         "-Xlint:unchecked",
     ],
     deps = [
-        "//java/com/khulnasoft.bitclone:local_parallelizer",
-        "//java/com/khulnasoft.bitclone/doc:annotations",  # unuseddeps: keep
-        "//java/com/khulnasoft.bitclone/exception",
-        "//java/com/khulnasoft.bitclone/git:environment",
-        "//java/com/khulnasoft.bitclone/util/console",
+        "//java/com/khulnasoft/bitclone:local_parallelizer",
+        "//java/com/khulnasoft/bitclone/doc:annotations",  # unuseddeps: keep
+        "//java/com/khulnasoft/bitclone/exception",
+        "//java/com/khulnasoft/bitclone/git:environment",
+        "//java/com/khulnasoft/bitclone/util/console",
         "//third_party:autovalue",
         "//third_party:error_prone",
         "//third_party:flogger",
@@ -53,9 +53,9 @@ java_library(
     ],
     deps = [
         ":util",
-        "//java/com/khulnasoft.bitclone:general_options",
-        "//java/com/khulnasoft.bitclone/exception",
-        "//java/com/khulnasoft.bitclone/util/console",
+        "//java/com/khulnasoft/bitclone:general_options",
+        "//java/com/khulnasoft/bitclone/exception",
+        "//java/com/khulnasoft/bitclone/util/console",
         "//third_party:guava",
         "//third_party:shell",
     ],

@@ -24,7 +24,7 @@ java_library(
         "-Xlint:unchecked",
     ],
     deps = [
-        "//java/com/khulnasoft.bitclone/profiler",
+        "//java/com/khulnasoft/bitclone/profiler",
         "//third_party:guava",
         "//third_party:truth",
     ],

@@ -23,7 +23,7 @@ java_library(
         "-Xlint:unchecked",
     ],
     deps = [
-        "//java/com/khulnasoft.bitclone/doc:annotations",
+        "//java/com/khulnasoft/bitclone/doc:annotations",
         "//third_party:guava",
         "//third_party:re2j",
         "//third_party:starlark",

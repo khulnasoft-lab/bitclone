@@ -29,8 +29,8 @@ java_library(
     name = "converters",
     srcs = glob(["**/*Converter.java"]),
     deps = [
-        "//java/com/khulnasoft.bitclone/authoring",
-        "//java/com/khulnasoft.bitclone/util",
+        "//java/com/khulnasoft/bitclone/authoring",
+        "//java/com/khulnasoft/bitclone/util",
         "//third_party:guava",
         "//third_party:jcommander",
     ],

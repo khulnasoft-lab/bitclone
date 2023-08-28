@@ -41,6 +41,6 @@ java_library(
         ":normalised_buildozer",
     ],
     deps = [
-        "//java/com/khulnasoft.bitclone/testing",
+        "//java/com/khulnasoft/bitclone/testing",
     ],
 )

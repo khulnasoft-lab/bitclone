@@ -23,8 +23,8 @@ java_library(
         "-Xlint:unchecked",
     ],
     deps = [
-        "//java/com/khulnasoft.bitclone/exception",
-        "//java/com/khulnasoft.bitclone/util/console",
+        "//java/com/khulnasoft/bitclone/exception",
+        "//java/com/khulnasoft/bitclone/util/console",
         "//third_party:error_prone",
         "//third_party:guava",
         "//third_party:starlark",
