@@ -1,4 +1,4 @@
-# Copyright 2016 Google Inc. All Rights Reserved.
+# Copyright 2023 KhulnaSoft Ltd. All Rights Reserved.
 
 package(
     default_visibility = ["//visibility:public"],
