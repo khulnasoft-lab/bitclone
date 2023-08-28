@@ -52,7 +52,7 @@ import javax.annotation.Nullable;
 import net.starlark.java.syntax.Location;
 
 /**
- * Map Google style TODOs
+ * Map KhulnaSoft style TODOs
  */
 public class TodoReplace implements Transformation {
 

@@ -2589,7 +2589,7 @@ public class GitModule implements LabelsAwareModule, StarlarkValue {
         // com.google.api.client.json.JsonFactory,
         //
         //   post_review_to_gerrit (feedback.bara.sky)
-        //   -> GoogleGerritApiTransport.post (ctx.destination.post_review)
+        //   -> KhulnasoftGerritApiTransport.post (ctx.destination.post_review)
         //   -> GerritApiTransport.post
         //   -> GerritApi.setReview
         //   -> GerritEndpoint.postReview

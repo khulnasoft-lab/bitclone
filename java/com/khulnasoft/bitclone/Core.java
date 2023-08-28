@@ -1177,7 +1177,7 @@ public class Core implements LabelsAwareModule, StarlarkValue {
   @SuppressWarnings("unused")
   @StarlarkMethod(
       name = "todo_replace",
-      doc = "Replace Google style TODOs. For example `TODO(username, othername)`.",
+      doc = "Replace KhulnaSoft style TODOs. For example `TODO(username, othername)`.",
       parameters = {
         @Param(
             name = "tags",
