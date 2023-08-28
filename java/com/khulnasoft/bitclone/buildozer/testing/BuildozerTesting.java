@@ -36,7 +36,7 @@ public final class BuildozerTesting {
   public static void enable(OptionsBuilder options) throws IOException {
     Path runtime = Paths.get(System.getenv("TEST_SRCDIR"))
         .resolve(System.getenv("TEST_WORKSPACE"))
-        .resolve("java/com/khulnasoft.bitclone/buildozer/testing");
+        .resolve("java/com/khulnasoft/bitclone/buildozer/testing");
     // Use data dependencies on the buildozer/buildifier binaries.
     File buildozer = runtime.resolve("buildozer").toFile();
     File buildifier = runtime.resolve("buildifier").toFile();

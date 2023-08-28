@@ -25,9 +25,9 @@ java_library(
     ],
     visibility = ["//visibility:public"],
     deps = [
-        "//java/com/khulnasoft.bitclone/exception",
-        "//java/com/khulnasoft.bitclone/git:core",
-        "//java/com/khulnasoft.bitclone/testing",
+        "//java/com/khulnasoft/bitclone/exception",
+        "//java/com/khulnasoft/bitclone/git:core",
+        "//java/com/khulnasoft/bitclone/testing",
         "//third_party:guava",
         "//third_party:truth",
     ],

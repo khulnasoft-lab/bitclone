@@ -20,9 +20,9 @@ java_library(
     name = "revision",
     srcs = glob(["**/*.java"]),
     deps = [
-        "//java/com/khulnasoft.bitclone/authoring",
-        "//java/com/khulnasoft.bitclone/doc:annotations",
-        "//java/com/khulnasoft.bitclone/exception",
+        "//java/com/khulnasoft/bitclone/authoring",
+        "//java/com/khulnasoft/bitclone/doc:annotations",
+        "//java/com/khulnasoft/bitclone/exception",
         "//third_party:guava",
         "//third_party:jsr305",
         "//third_party:starlark",

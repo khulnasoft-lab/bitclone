@@ -20,7 +20,7 @@ java_library(
     name = "profiler",
     srcs = glob(["**/*.java"]),
     deps = [
-        "//java/com/khulnasoft.bitclone/util/console",
+        "//java/com/khulnasoft/bitclone/util/console",
         "//third_party:flogger",
         "//third_party:guava",
         "//third_party:jsr305",

@@ -20,9 +20,9 @@ java_library(
     name = "toml",
     srcs = glob(["**/*.java"]),
     deps = [
-        "//java/com/khulnasoft.bitclone:starlark_date_time_module",
-        "//java/com/khulnasoft.bitclone/doc:annotations",  # Used for doc generation
-        "//java/com/khulnasoft.bitclone/exception",
+        "//java/com/khulnasoft/bitclone:starlark_date_time_module",
+        "//java/com/khulnasoft/bitclone/doc:annotations",  # Used for doc generation
+        "//java/com/khulnasoft/bitclone/exception",
         "//third_party:guava",
         "//third_party:starlark",
         "//third_party:tomlj",

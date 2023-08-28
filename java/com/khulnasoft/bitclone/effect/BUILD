@@ -20,8 +20,8 @@ java_library(
     name = "effect",
     srcs = glob(["**/*.java"]),
     deps = [
-        "//java/com/khulnasoft.bitclone/doc:annotations",  # Used for doc generation
-        "//java/com/khulnasoft.bitclone/revision",
+        "//java/com/khulnasoft/bitclone/doc:annotations",  # Used for doc generation
+        "//java/com/khulnasoft/bitclone/revision",
         "//third_party:guava",
         "//third_party:jsr305",
         "//third_party:starlark",

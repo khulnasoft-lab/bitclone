@@ -20,8 +20,8 @@ all_tests(
     name = "all_tests",
     tests = glob(["**/*Test.java"]),
     deps = [
-        "//java/com/khulnasoft.bitclone/configgen",
-        "//java/com/khulnasoft.bitclone/util",
+        "//java/com/khulnasoft/bitclone/configgen",
+        "//java/com/khulnasoft/bitclone/util",
         "//third_party:truth",
     ],
 )

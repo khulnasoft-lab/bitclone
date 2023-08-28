@@ -20,7 +20,7 @@ all_tests(
     name = "all_tests",
     tests = glob(["**/*Test.java"]),
     deps = [
-        "//java/com/khulnasoft.bitclone/json",
+        "//java/com/khulnasoft/bitclone/json",
         "//third_party:google_http_client",
         "//third_party:google_http_client_test",
         "//third_party:truth",

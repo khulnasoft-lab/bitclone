@@ -18,7 +18,7 @@ java_library(
     name = "json",
     srcs = glob(["**/*.java"]),
     deps = [
-        "//java/com/khulnasoft.bitclone/http/endpoint",
+        "//java/com/khulnasoft/bitclone/http/endpoint",
         "//third_party:google_http_client",
         "//third_party:starlark",
     ],

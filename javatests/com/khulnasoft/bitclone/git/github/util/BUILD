@@ -26,8 +26,8 @@ all_tests(
         "GitHubUtilTest.java",
     ],
     deps = [
-        "//java/com/khulnasoft.bitclone/exception",
-        "//java/com/khulnasoft.bitclone/git/github:util",
+        "//java/com/khulnasoft/bitclone/exception",
+        "//java/com/khulnasoft/bitclone/git/github:util",
         "//third_party:truth",
     ],
 )

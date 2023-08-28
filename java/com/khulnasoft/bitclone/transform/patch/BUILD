@@ -25,14 +25,14 @@ java_library(
         "QuiltTransformation.java",
     ],
     deps = [
-        "//java/com/khulnasoft.bitclone:base",
-        "//java/com/khulnasoft.bitclone:general_options",
-        "//java/com/khulnasoft.bitclone/config:base",
-        "//java/com/khulnasoft.bitclone/doc:annotations",  # Keep it, needed for doc generation
-        "//java/com/khulnasoft.bitclone/exception",
-        "//java/com/khulnasoft.bitclone/git:environment",
-        "//java/com/khulnasoft.bitclone/util",
-        "//java/com/khulnasoft.bitclone/util/console",
+        "//java/com/khulnasoft/bitclone:base",
+        "//java/com/khulnasoft/bitclone:general_options",
+        "//java/com/khulnasoft/bitclone/config:base",
+        "//java/com/khulnasoft/bitclone/doc:annotations",  # Keep it, needed for doc generation
+        "//java/com/khulnasoft/bitclone/exception",
+        "//java/com/khulnasoft/bitclone/git:environment",
+        "//java/com/khulnasoft/bitclone/util",
+        "//java/com/khulnasoft/bitclone/util/console",
         "//third_party:guava",
         "//third_party:jcommander",
         "//third_party:jsr305",

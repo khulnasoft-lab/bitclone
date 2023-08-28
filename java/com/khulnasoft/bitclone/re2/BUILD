@@ -20,7 +20,7 @@ java_library(
     name = "re2",
     srcs = glob(["**/*.java"]),
     deps = [
-        "//java/com/khulnasoft.bitclone/doc:annotations",  # Used for doc generation
+        "//java/com/khulnasoft/bitclone/doc:annotations",  # Used for doc generation
         "//third_party:re2j",
         "//third_party:starlark",
     ],

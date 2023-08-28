@@ -18,9 +18,9 @@ java_library(
     name = "multipart",
     srcs = glob(["**/*.java"]),
     deps = [
-        "//java/com/khulnasoft.bitclone/checks",
-        "//java/com/khulnasoft.bitclone/http/endpoint",
-        "//java/com/khulnasoft.bitclone/util/console",
+        "//java/com/khulnasoft/bitclone/checks",
+        "//java/com/khulnasoft/bitclone/http/endpoint",
+        "//java/com/khulnasoft/bitclone/util/console",
         "//third_party:google_http_client",
         "//third_party:guava",
         "//third_party:jsr305",

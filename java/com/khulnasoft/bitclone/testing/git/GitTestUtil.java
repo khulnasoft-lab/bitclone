@@ -515,7 +515,7 @@ public class GitTestUtil {
         Paths.get(System.getenv("TEST_SRCDIR"))
             .resolve(System.getenv("TEST_WORKSPACE"))
             .resolve(
-                "java/com/khulnasoft.bitclone/git/github/api/testing")
+                "java/com/khulnasoft/bitclone/git/github/api/testing")
             .resolve(testfile));
   }
 

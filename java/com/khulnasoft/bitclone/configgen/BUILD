@@ -22,7 +22,7 @@ java_library(
         "ConfigGenHeuristics.java",
     ],
     deps = [
-        "//java/com/khulnasoft.bitclone/util",
+        "//java/com/khulnasoft/bitclone/util",
         "//third_party:guava",
     ],
 )

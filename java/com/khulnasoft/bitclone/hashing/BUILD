@@ -22,9 +22,9 @@ java_library(
         "HashingModule.java",
     ],
     deps = [
-        "//java/com/khulnasoft.bitclone:base",
-        "//java/com/khulnasoft.bitclone/config:base",
-        "//java/com/khulnasoft.bitclone/exception",
+        "//java/com/khulnasoft/bitclone:base",
+        "//java/com/khulnasoft/bitclone/config:base",
+        "//java/com/khulnasoft/bitclone/exception",
         "//third_party:guava",
         "//third_party:starlark",
     ],

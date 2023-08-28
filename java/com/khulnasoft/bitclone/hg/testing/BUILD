@@ -26,5 +26,5 @@ java_library(
         "-Xlint:unchecked",
     ],
     visibility = ["//visibility:public"],
-    deps = ["//java/com/khulnasoft.bitclone/testing"],
+    deps = ["//java/com/khulnasoft/bitclone/testing"],
 )
