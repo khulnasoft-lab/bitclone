@@ -1,4 +1,4 @@
-FROM gcr.io/bazel-public/bazel 6.3.2 AS build
+FROM gcr.io/bazel-public/bazel:6.3.2 AS build
 
 USER root
 COPY . .
@@ -11,7 +11,7 @@ FROM golang:latest AS buildtools
 RUN go install github.com/bazelbuild/buildtools/buildozer@latest
 RUN go install github.com/bazelbuild/buildtools/buildifier@latest
 
-FROM openjdk 11.0.16-jre-slim
+FROM openjdk:11.0.16-jre-slim
 WORKDIR /usr/src/app
 ENV BITCLONE_CONFIG=bit.clone.sky \
     BITCLONE_SUBCOMMAND=migrate \
