@@ -1,4 +1,4 @@
-FROM gcr.io/bazel-public/bazel:6.0.0 AS build
+FROM gcr.io/bazel-public/bazel:6.3.2 AS build
 
 USER root
 COPY . .
