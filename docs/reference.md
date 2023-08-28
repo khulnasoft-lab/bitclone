@@ -1461,7 +1461,7 @@ Defines a migration pipeline which can be invoked via the Bitclone command.
 
 Implicit labels that can be used/exposed:
 
-  - BITCLONE_CONTEXT_REFERENCE: Requested reference. For example if bitclone is invoked as `bitclone copy.bara.sky workflow master`, the value would be `master`.
+  - BITCLONE_CONTEXT_REFERENCE: Requested reference. For example if bitclone is invoked as `bitclone bit.clone.sky workflow master`, the value would be `master`.
   - BITCLONE_LAST_REV: Last reference that was migrated
   - BITCLONE_CURRENT_REV: The current reference being migrated
   - BITCLONE_CURRENT_REV_DATE_TIME: Date & time for the current reference being migrated in ISO format (Example: "2011-12-03T10:15:30+01:00")
@@ -1527,7 +1527,7 @@ Name | Type | Description
 <span style="white-space: nowrap;">`--notransformation-join`</span> | *boolean* | By default Bitclone tries to join certain transformations in one so that it is more efficient. This disables the feature.
 <span style="white-space: nowrap;">`--read-config-from-change`</span> | *boolean* | For each imported origin change, load the workflow's origin_files, destination_files and transformations from the config version of that change. The rest of the fields (more importantly, origin and destination) cannot change and the version from the first config will be used.
 <span style="white-space: nowrap;">`--read-config-from-change-disable`</span> | *boolean* | --read-config-from-change is a arity 0 flag, this flag overrides it to override it being enabled.
-<span style="white-space: nowrap;">`--same-version`</span> | *boolean* | Re-import the last version imported. This is useful for example to check that a refactor in a copy.bara.sky file doesn't introduce accidental changes.
+<span style="white-space: nowrap;">`--same-version`</span> | *boolean* | Re-import the last version imported. This is useful for example to check that a refactor in a bit.clone.sky file doesn't introduce accidental changes.
 <span style="white-space: nowrap;">`--squash-skip-history`</span> | *boolean* | Avoid exposing the history of changes that are being migrated. This is useful when we want to migrate a new repository but we don't want to expose all the change history to metadata.squash_notes.
 <span style="white-space: nowrap;">`--threads`</span> | *int* | Number of threads to use when running transformations that change lot of files
 <span style="white-space: nowrap;">`--threads-for-merge-import`</span> | *int* | Number of threads to use for executing the diff tool for the merge import mode.
@@ -2396,11 +2396,11 @@ Set of functions to define Git origins and destinations.
 
 Name | Type | Description
 ---- | ---- | -----------
-<span style="white-space: nowrap;">`--allowed-git-push-options`</span> | *list* | This is a flag used to allowlist push options sent to git servers. E.g. bitclone copy.bara.sky --git-push-option="foo,bar" would make bitclone validate push so that the only push options (if there are any) used are 'foo' and 'bar'. If this flag is unset, it will skip push options validation. Set to "" to allow no push options.
+<span style="white-space: nowrap;">`--allowed-git-push-options`</span> | *list* | This is a flag used to allowlist push options sent to git servers. E.g. bitclone bit.clone.sky --git-push-option="foo,bar" would make bitclone validate push so that the only push options (if there are any) used are 'foo' and 'bar'. If this flag is unset, it will skip push options validation. Set to "" to allow no push options.
 <span style="white-space: nowrap;">`--experiment-checkout-affected-files`</span> | *boolean* | If set, bitclone will only checkout affected files at git origin. Note that this is experimental.
 <span style="white-space: nowrap;">`--git-credential-helper-store-file`</span> | *string* | Credentials store file to be used. See https://git-scm.com/docs/git-credential-store
 <span style="white-space: nowrap;">`--git-no-verify`</span> | *boolean* | Pass the '--no-verify' option to git pushes and commits to disable git commit hooks.
-<span style="white-space: nowrap;">`--git-push-option`</span> | *list* | This is a repeatable flag used to set git push level flags to send to git servers. E.g. bitclone copy.bara.sky --git-push-option foo --git-push-option bar would make git operations done by bitclone under the hood use the --push-option flags: git push -push-option=foo -push-option=bar ...
+<span style="white-space: nowrap;">`--git-push-option`</span> | *list* | This is a repeatable flag used to set git push level flags to send to git servers. E.g. bitclone bit.clone.sky --git-push-option foo --git-push-option bar would make git operations done by bitclone under the hood use the --push-option flags: git push -push-option=foo -push-option=bar ...
 <span style="white-space: nowrap;">`--git-tag-overwrite`</span> | *boolean* | If set, bitclone will force update existing git tag
 <span style="white-space: nowrap;">`--nogit-credential-helper-store`</span> | *boolean* | Disable using credentials store. See https://git-scm.com/docs/git-credential-store
 <span style="white-space: nowrap;">`--nogit-prompt`</span> | *boolean* | Disable username/password prompt and fail if no credentials are found. This flag sets the environment variable GIT_TERMINAL_PROMPT which is intended for automated jobs running Git https://git-scm.com/docs/git/2.3.0#git-emGITTERMINALPROMPTem
@@ -2941,7 +2941,7 @@ destination_checker | `checker` or `NoneType`<br><p>Checker for applicable gerri
 <a id="git.origin" aria-hidden="true"></a>
 ### git.origin
 
-Defines a standard Git origin. For Git specific origins use: `github_origin` or `gerrit_origin`.<br><br>All the origins in this module accept several string formats as reference (When bitclone is called in the form of `bitclone config workflow reference`):<br><ul><li>**Branch name:** For example `master`</li><li>**An arbitrary reference:** `refs/changes/20/50820/1`</li><li>**A SHA-1:** Note that it has to be reachable from the default refspec</li><li>**A Git repository URL and reference:** `http://github.com/foo master`</li><li>**A GitHub pull request URL:** `https://github.com/some_project/pull/1784`</li></ul><br>So for example, Bitclone can be invoked for a `git.origin` in the CLI as:<br>`bitclone copy.bara.sky my_workflow https://github.com/some_project/pull/1784`<br>This will use the pull request as the origin URL and reference.
+Defines a standard Git origin. For Git specific origins use: `github_origin` or `gerrit_origin`.<br><br>All the origins in this module accept several string formats as reference (When bitclone is called in the form of `bitclone config workflow reference`):<br><ul><li>**Branch name:** For example `master`</li><li>**An arbitrary reference:** `refs/changes/20/50820/1`</li><li>**A SHA-1:** Note that it has to be reachable from the default refspec</li><li>**A Git repository URL and reference:** `http://github.com/foo master`</li><li>**A GitHub pull request URL:** `https://github.com/some_project/pull/1784`</li></ul><br>So for example, Bitclone can be invoked for a `git.origin` in the CLI as:<br>`bitclone bit.clone.sky my_workflow https://github.com/some_project/pull/1784`<br>This will use the pull request as the origin URL and reference.
 
 `origin` `git.origin(url, ref=None, submodules='NO', excluded_submodules=[], include_branch_commit_logs=False, first_parent=True, partial_fetch=False, patch=None, describe_version=None, version_selector=None, primary_branch_migration=False)`
 
@@ -4499,13 +4499,13 @@ series | `string`<br><p>A file which contains a list of patches to apply. It is 
 Suppose the destination repository's directory structure looks like:
 ```
 source_root/BUILD
-source_root/copy.bara.sky
+source_root/bit.clone.sky
 source_root/migrated_file1
 source_root/migrated_file2
 source_root/patches/series
 source_root/patches/patch1.patch
 ```
-Then the transformations in `source_root/copy.bara.sky` should look like:
+Then the transformations in `source_root/bit.clone.sky` should look like:
 
 ```python
 [

@@ -13,7 +13,7 @@ RUN go install github.com/bazelbuild/buildtools/buildifier@latest
 
 FROM openjdk:11-jre-slim
 WORKDIR /usr/src/app
-ENV BITCLONE_CONFIG=copy.bara.sky \
+ENV BITCLONE_CONFIG=bit.clone.sky \
     BITCLONE_SUBCOMMAND=migrate \
     BITCLONE_OPTIONS='' \
     BITCLONE_WORKFLOW=default \
