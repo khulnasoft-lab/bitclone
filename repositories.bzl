@@ -161,9 +161,9 @@ def bitclone_repositories():
     maybe(
         http_archive,
         name = "JCommander",
-        sha256 = "4b769cc793f0c3402a573c50960c5c4f41da1152abb415c0a764abb6f070f728",
+        sha256 = "1e090ba6f6d3197a3ff2b9e94a2c74698d14f8e4aa5ac36684203cf54fce73a6",
         urls = [
-            "https://github.com/cbeust/jcommander/archive/748ddba20a28956332b413eaa99d7e8b5422104d.zip",
+            "https://github.com/cbeust/jcommander/archive/60df0cf478a19532d967950311810583657c6825.zip",
         ],
         build_file = Label("//external/third_party:jcommander.BUILD"),
     )
