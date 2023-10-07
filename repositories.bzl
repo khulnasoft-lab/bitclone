@@ -75,11 +75,11 @@ def bitclone_repositories():
         patches = ["@io_bazel//third_party/protobuf:21.7.patch"],
         patch_cmds = EXPORT_WORKSPACE_IN_BUILD_FILE,
         patch_cmds_win = EXPORT_WORKSPACE_IN_BUILD_FILE_WIN,
-        sha256 = "07d69502e58248927b58c7d7e7424135272ba5b2852a753ab6b67e62d2d29355",
-        strip_prefix = "protobuf-24.3",
+        sha256 = "bfa5597c5cc279012cae6a6c1727090427f2f9a37741cfd8eed2802b628f9426",
+        strip_prefix = "protobuf-24.4",
         urls = [
-            "https://mirror.bazel.build/github.com/protocolbuffers/protobuf/archive/v24.3.tar.gz",
-            "https://github.com/protocolbuffers/protobuf/archive/v24.3.tar.gz",
+            "https://mirror.bazel.build/github.com/protocolbuffers/protobuf/archive/v24.4.tar.gz",
+            "https://github.com/protocolbuffers/protobuf/archive/v24.4.tar.gz",
         ],
     )
 
