@@ -115,9 +115,9 @@ def bitclone_repositories():
     maybe(
         http_archive,
         name = "rules_python",
-        sha256 = "33d151f134caf30a6c98b4609e4f19cbb49ad96bfea23e320b2232a190ee1114",
-        strip_prefix = "rules_python-754b26a48afc9ba335a522d3fc634a8329dc44a3",
-        url = "https://github.com/bazelbuild/rules_python/archive/754b26a48afc9ba335a522d3fc634a8329dc44a3.zip",
+        sha256 = "e97ebe73ff69430d084c0cf77f463d22fb67d0490c3c134fb47db90f2523c1a3",
+        strip_prefix = "rules_python-bee35ef2abb0a1b59123500528c7d4ca0cd8a688",
+        url = "https://github.com/bazelbuild/rules_python/archive/bee35ef2abb0a1b59123500528c7d4ca0cd8a688.zip",
     )
 
     # LICENSE: The Apache Software License, Version 2.0
