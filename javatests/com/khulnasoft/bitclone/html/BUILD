@@ -12,21 +12,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-package(default_visibility = ["//visibility:public"])
+load("//javatests/com/khulnasoft.bitclone:test.bzl", "all_tests")
 
 licenses(["notice"])
 
-java_library(
-    name = "credentials",
-    srcs = glob(["*.java"]),
+all_tests(
+    name = "all_tests",
+    tests = ["HtmlTest.java"],
     deps = [
-        "//java/com/khulnasoft.bitclone:options",
         "//java/com/khulnasoft.bitclone/exception",
-        "//java/com/khulnasoft.bitclone/util/console",
-        "//third_party:autovalue",
-        "//third_party:guava",
-        "//third_party:jsr305",
-        "//third_party:starlark",
-        "//third_party:tomlj",
+        "//java/com/khulnasoft.bitclone/html",
+        "//java/com/khulnasoft.bitclone/testing",
+        "//java/com/khulnasoft.bitclone/util/console/testing",
+        "//third_party:truth",
     ],
 )

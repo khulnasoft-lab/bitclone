@@ -19,6 +19,6 @@
    /**
     * An associated flags class annotated with {@code Parameter}
     */
-   // TODO(copybara-team): change to <? extends Option>.
+   // TODO(bitclone-team): change to <? extends Option>.
    Class<?>[] value();
  }

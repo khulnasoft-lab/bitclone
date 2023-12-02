@@ -12,7 +12,7 @@
  
  /**
   * Given a file with list of classes, an output file, and an optional template file, generates a
-  * Markdown document with Copybara reference guide.
+  * Markdown document with Bitclone reference guide.
   */
  public final class Generator {
  

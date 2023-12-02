@@ -17,4 +17,4 @@ Follow either of the two links above to access the appropriate CLA and instructi
 
 ### Contributing code
 
-If you have improvements to Copybara, send us your pull requests!
+If you have improvements to Bitclone, send us your pull requests!

@@ -6,7 +6,7 @@
  import java.lang.annotation.Target;
  
  /**
-  * Documentation for elements of Copybara configuration, like Origins, Destinations, etc.
+  * Documentation for elements of Bitclone configuration, like Origins, Destinations, etc.
   */
  @Retention(RetentionPolicy.RUNTIME)
  @Target({ElementType.TYPE})

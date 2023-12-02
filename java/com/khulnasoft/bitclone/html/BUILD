@@ -12,21 +12,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-package(default_visibility = ["//visibility:public"])
-
 licenses(["notice"])
 
+package(default_visibility = ["//visibility:public"])
+
 java_library(
-    name = "credentials",
-    srcs = glob(["*.java"]),
+    name = "html",
+    srcs = glob(["**/*.java"]),
     deps = [
-        "//java/com/khulnasoft.bitclone:options",
+        "//java/com/khulnasoft.bitclone/doc:annotations",
         "//java/com/khulnasoft.bitclone/exception",
-        "//java/com/khulnasoft.bitclone/util/console",
-        "//third_party:autovalue",
         "//third_party:guava",
-        "//third_party:jsr305",
+        "//third_party:jsoup",
         "//third_party:starlark",
-        "//third_party:tomlj",
     ],
 )
