@@ -68,7 +68,7 @@ Run:
 
 ```shell
 $ (mkdir /tmp/foo ; cd /tmp/foo ; git init --bare)
-$ bitclone copy.bara.sky
+$ bitclone bit.clone.sky
 ```
 
 ## Getting Started using Bitclone
@@ -176,8 +176,8 @@ In addition to passing cmd args to the container, you can also set the following
 environment variables as an alternative:
 * `BITCLONE_SUBCOMMAND=migrate`
   * allows you to change the command run, defaults to `migrate`
-* `BITCLONE_CONFIG=copy.bara.sky`
-  * allows you to specify a path to a config file, defaults to root `copy.bara.sky`
+* `BITCLONE_CONFIG=bit.clone.sky`
+  * allows you to specify a path to a config file, defaults to root `bit.clone.sky`
 * `BITCLONE_WORKFLOW=default`
   * allows you to specify the workflow to run, defaults to `default`
 * `BITCLONE_SOURCEREF=''`
